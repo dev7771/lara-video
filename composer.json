@@ -1,0 +1,21 @@
+{
+    "name": "turanzamanli/lara-video",
+    "description": "Video CRUD",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Turan ZMNLI",
+            "email": "turanzamanli@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Turanzamanli\\LaraVideo": "src/"
+        }
+    }
+}
