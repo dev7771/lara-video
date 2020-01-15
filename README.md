@@ -8,3 +8,5 @@ Laravideo is package
 
 ## Installation
 
+ composer require turanzamanli/lara-video
+

@@ -21,7 +21,7 @@ class VideoController extends Controller
 
         $videos = Video::orderBy('id','desc')->get();
 
-        return view('backend.videos.index', compact('videos'));
+        return view('laravideo::index', compact('videos'));
         
     }
 
@@ -35,7 +35,7 @@ class VideoController extends Controller
 
         $ordering = Video::max('ordering') + 1;
 
-        return view('backend.videos.create', compact('ordering'));
+        return view('laravideo::create', compact('ordering'));
     }
 
     /**
@@ -129,7 +129,7 @@ class VideoController extends Controller
     public function edit(Video $video)
     {
 
-        return view('backend.videos.edit', compact('video'));
+        return view('laravideo::edit', compact('video'));
     }
 
     /**
