@@ -10,3 +10,6 @@ Laravideo is package
 
  composer require turanzamanli/lara-video
 
+
+then
+ okay
