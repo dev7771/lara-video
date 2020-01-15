@@ -10,15 +10,20 @@
         }
     ],
     "minimum-stability": "dev",
-    
-    "require": {
-         "php": ">=7.0.0"
-    },
+    "require": {},
 
     "autoload": {
         "psr-4": {
             "App\\": "app/",
             "Turanzamanli\\LaraVideo\\": "src/"
+        }
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Turanzamanli\\LaraVideo\\LaraVideoServiceProvider"
+            ]
         }
     }
 }
