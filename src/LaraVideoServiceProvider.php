@@ -16,7 +16,7 @@ class LaraVideoServiceProvider extends ServiceProvider {
 		$this->loadMigrationsFrom(__DIR__.'/migrations');
 		$this->loadViewsFrom(__DIR__.'/views', 'laravideo');
 		$this->publishes([
-			__DIR__.'/views' => base_path('resources/views/turanzamali/lara-video');
+			__DIR__.'/views' => base_path('resources/views/turanzamali/lara-video')
 		]);
 	} 
 
