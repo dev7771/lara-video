@@ -18,7 +18,7 @@ class LaraVideoServiceProvider extends ServiceProvider {
 		$this->publishes([
 			__DIR__.'/views' => base_path('resources/views/turanzamali/lara-video')
 		]);
-	} 
+	}
 
 
 	/**
@@ -28,9 +28,9 @@ class LaraVideoServiceProvider extends ServiceProvider {
 	 */
 	public function register() {
 
-		$this->app->make('turanzamanli\lara-video\VideoController'); 
-	} 
+		// $this->app->make('Turanzamanli\LaraVideo\VideoController');
+	}
 
- 
+
 
 }
