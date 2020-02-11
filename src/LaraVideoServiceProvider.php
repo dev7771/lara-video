@@ -28,7 +28,7 @@ class LaraVideoServiceProvider extends ServiceProvider {
 	 */
 	public function register() {
 
-		$this->app->make('turanzamali\lara-video\VideoController'); 
+		$this->app->make('turanzamanli\lara-video\VideoController'); 
 	} 
 
  
