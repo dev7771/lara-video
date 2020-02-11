@@ -1,36 +1,15 @@
 <?php
-namespace Turanzamanli\LaraVideo;
 
-use Illuminate\Support\ServiceProvider;
+$middleware = ['web', 'auth:admin'];
 
-class LaraVideoServiceProvider extends ServiceProvider {
+$prefix = 'admin';
 
-	/**
-	 * Bootstrap the application services
-	 *
-	 * @return void
-	 */
-	public function boot() {
+$as = '';
 
-		$this->loadRoutesFrom(__DIR__.'/routes.php');
-		$this->loadMigrationsFrom(__DIR__.'/migrations');
-		$this->loadViewsFrom(__DIR__.'/views', 'laravideo');
-		$this->publishes([ 
-			__DIR__.'/views' => base_path('resources/views/turanzamali/lara-video')
-		]);
-	}
+$namespace = '\Turanzamanli\LaraVideo';
 
 
-	/**
-	 * Register the application services
-	 *
-	 * @return void
-	 */
-	public function register() {
+Route::group(compact('middleware', 'prefix', 'as', 'namespace'), function () {
 
-		// $this->app->make('Turanzamanli\LaraVideo\VideoController');
-	}
-
-
-
-}
+		Route::resource('/videos', 'VideoController');
+});
